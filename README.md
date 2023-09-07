@@ -1,6 +1,10 @@
 # PWEB-tugas1
 Nama : Rule Lulu Damara
+
 NRP : 5025211050
+
+Kelas : PWEB I
+
 
 Nama Website: Organic Juice - Situs Penjualan Minuman Segar
 
