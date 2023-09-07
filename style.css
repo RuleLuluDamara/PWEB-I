@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EB961F;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Gaya untuk header dan navbar */
+header {
+    background-color: #EB961F;
+    color: #fff;
+}
+
+nav {
+    background-color: #EB961F;
+    color: #fff;
+}
+
+/* Gaya untuk container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Gaya untuk logo */
+.logo img {
+    max-width: 100px; /* Sesuaikan ukuran logo sesuai keinginan Anda */
+}
+
+/* Gaya untuk menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0B621B;
+    font-weight: bold;
+}
+
+/* Gaya untuk mengatur tampilan pada layar kecil */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+.landing {
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #0B621B;
+    font-size: 24px; 
+}
+
+@media (min-width: 1200px) {
+    .landing {
+        background-size: contain;
+    }
+}
+
+
+.landing-content {
+    max-width: 800px;
+    padding: 20px;
+    
+}
+
+.landing-content h2 {
+    font-size: 70px; 
+    background-color: rgba(240, 236, 207, 0.7); /* Warna latar belakang transparan */
+    padding: 10px 20px; /* Beri ruang di sekitar teks */
+    border-radius: 10px; /* Mengatur sudut menjadi bulat */
+    display: inline-block; /* Membuat kotak hanya mengelilingi teks */
+}
+
+.btn-cta {
+    background-color: #e74c3c;
+    color: #E5D283;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #c0392b;
+}
+
+.menu {
+    background-color: #F0ECCF;
+    padding: 40px 0;
+}
+
+.menu h2 {
+    text-align: center; 
+    font-size: 40px; 
+    color : #0B621B;
+}
+
+.menu .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.menu-item {
+    display: flex;
+    border-bottom: 1px solid #E5D283;
+    padding: 20px 0;
+}
+
+.menu-item img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: #A3BB98;
+}
+
+
+.btn-buy {
+    background-color: #A3BB98;
+    color: #E5D283;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #A3BB98;
+    color: #0B621B;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info, .social-links {
+    flex: 1;
+}
+
+.contact-info h3, .social-links h3 {
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-links img {
+    max-width: 30px;
+    height: auto;
+}
+
