@@ -23,7 +23,6 @@ function calculateResult() {
   }
 }
 
-
 function deleteLastCharacter() {
   currentInput = currentInput.slice(0, -1);
   document.getElementById("display").value = currentInput;
